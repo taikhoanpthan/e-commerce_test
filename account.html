@@ -65,7 +65,7 @@
                 <input type="text" placeholder="tên đăng nhập" />
                 <input type="email" placeholder="email" />
                 <input type="password" placeholder="mật khẩu" />
-                <button type="submit" class="btn">Đăng ký</button>
+                <button type="button" id="dialog" class="btn">Đăng ký</button>
               </form>
             </div>
           </div>
@@ -75,46 +75,46 @@
 
     <!----------------------------------footer------------------------------------->
     <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col-1">
-              <h3>Tải ứng dụng của chúng tôi</h3>
-              <p>Tải xuống ứng dụng cho điện thoại Android và ios của bạn.</p>
-              <div class="app-logo">
-                <img src="images/play-store.png" />
-                <img src="images/app-store.png" />
-              </div>
-            </div>
-            <div class="footer-col-2">
-              <img src="images/shoe.png" />
-              <p>
-                Mục đích của chúng tôi là làm cho niềm vui và lợi ích của Thể thao
-                có thể tiếp cận được với nhiều người theo cách bền vững
-              </p>
-            </div>
-            <div class="footer-col-3">
-              <h3>Liên kết hữu ích</h3>
-              <ul>
-                <li>Phiếu giảm giá</li>
-                <li>Bài đăng trên blog</li>
-                <li>Trở lại</li>
-                <li>Liên hệ chúng tôi</li>
-              </ul>
-            </div>
-            <div class="footer-col-4">
-              <h3>Theo dõi chúng tôi</h3>
-              <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
-              </ul>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Tải ứng dụng của chúng tôi</h3>
+            <p>Tải xuống ứng dụng cho điện thoại Android và ios của bạn.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
             </div>
           </div>
-          <hr />
-          <p class="copyright">Copyright 2024 - Phan Anh Mỹ</p>
+          <div class="footer-col-2">
+            <img src="images/shoe.png" />
+            <p>
+              Mục đích của chúng tôi là làm cho niềm vui và lợi ích của Thể thao
+              có thể tiếp cận được với nhiều người theo cách bền vững
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Liên kết hữu ích</h3>
+            <ul>
+              <li>Phiếu giảm giá</li>
+              <li>Bài đăng trên blog</li>
+              <li>Trở lại</li>
+              <li>Liên hệ chúng tôi</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Theo dõi chúng tôi</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <p class="copyright">Copyright 2024 - Phan Anh Mỹ</p>
       </div>
+    </div>
 
     <!-----------------------------------js for toggle menu-------------------------------------->
     <script>
@@ -146,6 +146,23 @@
         LoginForm.style.transform = "translateX(300px)";
         Indicator.style.transform = "translateX(0px)";
       }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      document.getElementById("dialog").addEventListener("click", function () {
+        Swal.fire({
+          title: "Đăng kí thành công thành công",
+          text: "Trở lại màn hình chính?",
+          icon: "success",
+          showCancelButton: true,
+          confirmButtonText: "OK",
+          cancelButtonText: "Hủy",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = "index.html";
+          }
+        });
+      });
     </script>
   </body>
 </html>
