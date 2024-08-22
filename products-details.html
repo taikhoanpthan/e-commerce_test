@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tất cả sản phẩm - Redstore</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,7 +18,6 @@
     <link rel="shortcut icon" href="./images/cart.png" type="image/x-icon">
   </head>
   <body>
-    <!--<div class ="header">-->
     <div class="container">
       <div class="navbar">
         <div class="logo">
@@ -39,11 +38,9 @@
         <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" />
       </div>
     </div>
-    <!--</div>-->
 
     <!------------------------------ Chi tiết sản phẩm ------------------------------>
     <div class="small-container single-product">
-      <!--<h2 class="title" >Sản phẩm nổi bật</h2>-->
       <div class="row">
         <div class="col-2">
           <img src="images/product-11.jpg" width="80%" id="productImg" />
@@ -66,7 +63,7 @@
         <div class="col-2">
           <p>Trang chủ / Giày</p>
           <h1>Giày thể thao Downshifter</h1>
-          <h4>$50.00</h4>
+          <h4>1.200.000₫</h4>
           <select>
             <option>Chọn kích thước</option>
             <option>6<!--Nhỏ (S)--></option>
@@ -113,7 +110,7 @@
             <i class="fa fa-star-half-o"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$50.00</p>
+          <p>1.200.000₫</p>
         </div>
         <div class="col-4">
           <a href="products-details.html"><img src="images/product-2.jpg" /></a>
@@ -125,7 +122,7 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-half-o"></i>
           </div>
-          <p>$35.00</p>
+          <p>840.000₫</p>
         </div>
         <div class="col-4">
           <a href="products-details.html"><img src="images/product-3.jpg" /></a>
@@ -137,7 +134,7 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$15.00</p>
+          <p>360.000₫</p>
         </div>
         <div class="col-4">
           <a href="products-details.html"
@@ -151,7 +148,7 @@
             <i class="fa fa-star-o"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$48.00</p>
+          <p>1.152.000₫</p>
         </div>
       </div>
     </div>
@@ -162,7 +159,7 @@
         <div class="row">
           <div class="footer-col-1">
             <h3>Tải ứng dụng của chúng tôi</h3>
-            <p>Tải xuống ứng dụng cho điện thoại Android và ios của bạn.</p>
+            <p>Tải xuống ứng dụng cho điện thoại Android và iOS của bạn.</p>
             <div class="app-logo">
               <img src="images/play-store.png" />
               <img src="images/app-store.png" />
@@ -171,7 +168,7 @@
           <div class="footer-col-2">
             <img src="images/shoe.png" />
             <p>
-              Mục đích của chúng tôi là làm cho niềm vui và lợi ích của Thể thao
+              Mục đích của chúng tôi là làm cho niềm vui và lợi ích của thể thao
               có thể tiếp cận được với nhiều người theo cách bền vững
             </p>
           </div>
@@ -195,7 +192,7 @@
           </div>
         </div>
         <hr />
-        <p class="copyright">Copyright 2024 - Phan Anh Mỹ</p>
+        <p class="copyright">Bản quyền 2024 - Phan Anh Mỹ</p>
       </div>
     </div>
 
@@ -203,18 +200,17 @@
     <script>
       var menuItems = document.getElementById("MenuItems");
 
-      MenuItems.style.maxHeight = "0px";
+      menuItems.style.maxHeight = "0px";
       function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
         } else {
-          MenuItems.style.maxHeight = "0px";
+          menuItems.style.maxHeight = "0px";
         }
       }
     </script>
 
     <!-----------------------js for product gallery-------------------->
-
     <script>
       var productImg = document.getElementById("productImg");
       var smallImg = document.getElementsByClassName("small-img");
